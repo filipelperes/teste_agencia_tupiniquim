@@ -1,0 +1,170 @@
+:root {
+    --main-color: #5611a5;
+    --grey: #7d7992;
+    --blue: #2578fa;
+    --lighter-blue: rgba(37, 120, 250, 0.25);
+    --white: #fff;
+    --green-water: #27e0fc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dflex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+}
+
+.round-border {
+    border-radius: 7px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.container {
+    padding: 2% 5%;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+/* HEADER */
+header {
+    justify-content: space-around;
+}
+
+.buttons a,
+.menu {
+    align-self: center;
+    font-weight: 500;
+}
+
+.menu {
+    color: var(--grey);
+}
+
+.menu a {
+    margin-left: 10%;
+}
+
+.buttons a {
+    width: auto;
+}
+
+.login {
+    color: var(--main-color);
+    margin-top: -12px;
+    margin-right: 15%;
+}
+
+.login span {
+    display: inline-block;
+    background: url('../imgs/icone-login-teste-programador.png') no-repeat;
+    width: 20px;
+    height: 28px;
+    scale: 0.8;
+    transform: translate(-15px, 7px);
+}
+
+.signup {
+    color: var(--blue);
+    border: 1px solid var(--lighter-blue);
+    padding: 5px 7%;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    color: var(--white);
+    background: top / cover no-repeat url('../imgs/fundo-footer-teste-programador.png.jpg');
+    padding: 107px 12% 2% 12% !important;
+}
+
+.footer-menu a {
+    display: block;
+}
+
+footer .logo {
+    filter: brightness(0) invert(1);
+    scale: 0.8;
+    margin: 0 0 0 -27px !important;
+}
+
+.footer-menu:first-child a>span {
+    margin-right: 6%;
+}
+
+.footer-menu:first-child>a:first-of-type {
+    margin-top: -23px;
+}
+
+.footer-menu:first-child a:first-of-type>span>i {
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    padding: 2px;
+    width: 25px;
+    text-align: center;
+}
+
+.footer-menu:first-child a:last-of-type>span>i {
+    transform: translateY(4px) rotateY(180deg);
+    font-size: 1.4rem;
+}
+
+.footer-menu .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 55px;
+}
+
+.footer-menu a {
+    margin: 40px 0;
+}
+
+footer>div:last-of-type {
+    justify-content: space-between;
+    padding-top: 2%;
+    border-top: 1px solid var(--white);
+    margin-top: 7%;
+}
+
+.social-container {
+    flex-basis: 200px;
+    justify-content: flex-end;
+}
+
+.social-container a:not(:last-of-type) {
+    margin-right: 17%;
+}
