@@ -14,7 +14,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
 }
@@ -22,6 +22,11 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 .dflex {
@@ -32,20 +37,12 @@ a {
     flex-direction: column;
 }
 
-.center {
+.main-center {
     justify-content: center;
 }
 
-.round-border {
-    border-radius: 7px;
-}
-
-.capitalize {
-    text-transform: capitalize;
-}
-
-.container {
-    padding: 2% 5%;
+.cross-center {
+    align-items: center;
 }
 
 .flex-1 {
@@ -60,12 +57,40 @@ a {
     justify-content: flex-end;
 }
 
+.round-border {
+    border-radius: 7px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.container {
+    padding: 2% 5%;
+}
+
+.relative {
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.mt-27px {
+    margin-top: 27px;
+}
+
 /* HEADER */
 header {
     justify-content: space-around;
 }
 
-.buttons a,
+.header-buttons a,
 .menu {
     align-self: center;
     font-weight: 500;
@@ -79,78 +104,70 @@ header {
     margin-left: 10%;
 }
 
-.buttons a {
-    width: auto;
-}
-
 .login {
     color: var(--main-color);
-    margin-top: -12px;
+    margin-top: -3%;
     margin-right: 15%;
 }
 
 .login span {
     display: inline-block;
-    background: url('../imgs/icone-login-teste-programador.png') no-repeat;
+    background: url(../imgs/icone-login-teste-programador.png) no-repeat;
     width: 20px;
     height: 28px;
     scale: 0.8;
-    transform: translate(-15px, 7px);
+    transform: translate(-15px, 9px);
 }
 
 .signup {
     color: var(--blue);
     border: 1px solid var(--lighter-blue);
     padding: 5px 7%;
-    text-align: center;
 }
 
 /* FOOTER */
 footer {
     color: var(--white);
-    background: top / cover no-repeat url('../imgs/fundo-footer-teste-programador.png.jpg');
-    padding: 107px 12% 2% 12% !important;
-}
-
-.footer-menu a {
-    display: block;
+    background: top / cover no-repeat url(../imgs/fundo-footer-teste-programador.png.jpg);
+    padding: 113px 12% 2% 12% !important;
 }
 
 footer .logo {
     filter: brightness(0) invert(1);
-    scale: 0.8;
-    margin: 0 0 0 -27px !important;
+    scale: 0.6;
+    margin: 0 0 0 -60px;
 }
 
-.footer-menu:first-child a>span {
-    margin-right: 6%;
-}
-
-.footer-menu:first-child>a:first-of-type {
-    margin-top: -23px;
-}
-
-.footer-menu:first-child a:first-of-type>span>i {
-    border: 3px solid var(--white);
-    border-radius: 50%;
-    padding: 2px;
-    width: 25px;
-    text-align: center;
-}
-
-.footer-menu:first-child a:last-of-type>span>i {
-    transform: translateY(4px) rotateY(180deg);
-    font-size: 1.4rem;
-}
-
-.footer-menu .title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-top: 55px;
+footer .logo a {
+    margin-bottom: -37px;
 }
 
 .footer-menu a {
+    display: block;
     margin: 40px 0;
+}
+
+.footer-menu:first-child i {
+    margin-right: 5%;
+}
+
+.footer-menu:first-child a:first-of-type i {
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    width: 30px;
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+.footer-menu:first-child a:last-of-type i {
+    transform: translateY(4px) rotateY(180deg);
+    font-size: 1.5rem;
+}
+
+.footer-menu .title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 75px;
 }
 
 footer>div:last-of-type {
@@ -162,7 +179,6 @@ footer>div:last-of-type {
 
 .social-container {
     flex-basis: 200px;
-    justify-content: flex-end;
 }
 
 .social-container a:not(:last-of-type) {

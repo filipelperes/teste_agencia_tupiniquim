@@ -7,11 +7,14 @@
     <title>DriveOn teste agencia tupiniquim</title>
     <link rel="stylesheet" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -25,22 +28,153 @@
                 <a href="">Contact</a>
             </nav>
         </div>
-        <div class="buttons dflex capitalize flex-1 flex-end">
+        <div class="header-buttons dflex capitalize flex-1 flex-end">
             <a href="" class="login flex"><span></span>Log in</a>
-            <a href="" class="signup round-border">Sign up</a>
+            <a href="" class="signup round-border text-center">Sign up</a>
         </div>
     </header>
-    <main></main>
-    <footer class="dflex column container">
+    <main class="dflex column">
+        <section class="section-header dflex">
+            <div class="section-header-container flex-1 relative">
+                <div data-aos="zoom-in" data-aos-duration="1700"
+                     class="section-header-content dflex column cross-center">
+                    <h2 class="capitalize">Start your workday comfortably</h2>
+                    <p>Get in, sit back and experience the comfort of car that takes you directly to your destination.
+                        Arriving work as a sardine with public transport or sweating is a thing of past.</p>
+                    <a class="round-border text-center" href="">Discover</a>
+                </div>
+                <span class="line"></span>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1700" class="section-header-img flex-1"></div>
+        </section>
+        <section class="section-how-to dflex column">
+            <h2 data-aos="zoom-in" data-aos-duration="1700" class="text-center">How to get started?</h2>
+            <div class="slider-container dflex main-center">
+                <div class="flex-1 slide">
+                    <div data-aos="flip-up" data-aos-duration="1700"
+                         class="slide-content dflex column text-center cross-center">
+                        <img src="imgs/solucao-1-teste-programador.png" alt="">
+                        <h3 class="mt-27px">Create you account</h3>
+                        <p class="mt-27px">Complete your account with some basic information including your home, your
+                            work location and
+                            your working hours.</p>
+                    </div>
+                </div>
+                <div class="flex-1 slide">
+                    <div data-aos="flip-left" data-aos-duration="1700"
+                         class="slide-content dflex column text-center cross-center">
+                        <img src="imgs/solucao-2-teste-programador.png" alt="">
+                        <h3 class="mt-27px">Plan your journeys</h3>
+                        <p class="mt-27px">Open the app, click the agenda tab and enter your working hours for the
+                            coming week. Then
+                            you'll be presented with a list of our drivers.</p>
+                    </div>
+                </div>
+                <div class="flex-1 slide">
+                    <div data-aos="flip-right" data-aos-duration="1700"
+                         class="slide-content dflex column text-center cross-center">
+                        <img src="imgs/solucao-3-teste-programador.png" alt="">
+                        <h3 class="mt-27px">Meet your driver</h3>
+                        <p class="mt-27px">Use our chat to get to know your match with our driver. You'll be picked up
+                            at your regular
+                            location, or agree on an alternative pick-up location.</p>
+                    </div>
+                </div>
+                <div class="flex-1 slide">
+                    <div data-aos="flip-down" data-aos-duration="1700"
+                         class="slide-content dflex column text-center cross-center">
+                        <img src="imgs/solucao-4-teste-programador.png" alt="">
+                        <h3 class="mt-27px">Enjoy your journey</h3>
+                        <p class="mt-27px">Get in, sit back and enjoy your journey that takes you directly to your
+                            destination with some
+                            free cup of coffe from us.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-about dflex column">
+            <div class="section-about-container dflex">
+                <div class="section-about-content-container flex-1 dflex">
+                    <div data-aos="zoom-in-down" data-aos-duration="1700" class="section-about-content relative">
+                        <span class="line relative"></span>
+                        <p class="mt-27px">DriveOn is a mobile carpool platform that effortlessly brings commuters
+                            together in one
+                            car.<br>Traveling home and work will never be the same again. Our mission is to stop traffic
+                            jams and CO2 pollution as a result of inefficient car commuting</p>
+                        <p class="mt-27px">Are you in?</p>
+                        <a href="">Learn more <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-right" data-aos-duration="1700" class="section-about-img flex-1"></div>
+            </div>
+            <div class="section-about-container dflex">
+                <div class="section-about-content-container flex-1 dflex">
+                    <div data-aos="zoom-in-up" data-aos-duration="1700" class="section-about-content relative">
+                        <span class="line relative"></span>
+                        <h3 class="mt-27px">Our commitment<br> to your safety</h3>
+                        <p class="mt-27px">with every safety feature we add and every standard in the Community
+                            Guide
+                            the we uphold, we
+                            are
+                            commited to protecting you throughout the journey. Leand more about our Community Guide <a
+                               href="">here.<span class="line relative"></span></a></p>
+                        <a href="">See all safety features <i class="fa-solid fa-angles-right"></i></a>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-left" data-aos-duration="1700" class="section-about-img flex-1"></div>
+            </div>
+        </section>
+        <section class="section-download-cta dflex column">
+            <div class="download dflex" data-aos="zoom-in" data-aos-duration="1300">
+                <div class="flex-1"></div>
+                <div class="flex-1 dflex column download-content-container">
+                    <div class="download-content relative">
+                        <span class="download-line relative"><span></span></span>
+                        <h3 data-aos="fade-left" data-aos-duration="2000">Download the DriveOn application to get more
+                            benefits and experience</h3>
+                        <div class="download-buttons dflex">
+                            <a data-aos="flip-up" data-aos-duration="2500" href=""
+                               class="button-clay-store dflex column relative">
+                                <i class="fa-solid fa-play"></i>
+                                <p class="uppercase">Get it on</p>
+                                <span>Clay Store</span>
+                            </a>
+                            <a data-aos="flip-down" data-aos-duration="2500" href=""
+                               class="button-play-app dlex column relative">
+                                <i class="fa-brands fa-apple"></i>
+                                <p>Download on the</p>
+                                <span>Play APP</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-container dflex">
+                <div class="cta-content-container flex-1 dflex main-center">
+                    <a data-aos="fade-right" data-aos-duration="1700" href="" class="cta-content dflex">
+                        <h2 class="flex-2">Register to be a driver partner<span class="line"></span></h2>
+                        <div class="cta-arrow"></div>
+                    </a>
+                </div>
+                <div class="cta-content-container flex-1 dflex main-center">
+                    <a data-aos="fade-left" data-aos-duration="1700" href="" class="cta-content dflex">
+                        <h2 class="flex-2">Register to start your journey<span class="line"></span></h2>
+                        <div class="cta-arrow"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="dflex column">
         <div class="dflex">
             <nav class="footer-menu flex-1 capitalize">
                 <h1 class="logo"><a href=""><img src="imgs/logo-teste-programador.png" alt=""></a></h1>
-                <a href=""><span><i class="fa-solid fa-question"></i></span>Resolution center</a>
-                <a href=""><span><i class="fa-solid fa-message"></i></span> English</a>
+                <a href=""><i class="fa-solid fa-question text-center"></i>Resolution center</a>
+                <a href=""><i class="fa-solid fa-message"></i> English</a>
             </nav>
             <div class="footer-menu flex-1"></div>
             <nav class="footer-menu flex-1">
-                <p class="title capitalize">About us</p>
+                <h2 class="title capitalize">About us</h2>
                 <a href="">Newsroom</a>
                 <a href="">Investor relations</a>
                 <a href="">Global citizenship</a>
@@ -49,7 +183,7 @@
                 <a href="">Carrer</a>
             </nav>
             <nav class="footer-menu flex-1">
-                <p class="title capitalize">Our product</p>
+                <h2 class="title capitalize">Our product</h2>
                 <a href="">Take a trip</a><a href="">Drive it</a><a href="">Eats</a><a href="">DriveOn for
                     Business</a><a href="">DriveOn Freight</a><a href="">Health</a><a href="">DriveOn Air</a><a
                    href="">Advanced Technologies Group</a>
@@ -57,15 +191,19 @@
         </div>
         <div class="capitalize dflex">
             <p>&copy; 2019 DriveOn technologies inc.</p>
-            <div class="social-container dflex">
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <div class="social-container dflex flex-end">
+                <a class="facebook" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="x" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="youtube" href=""><i class="fa-brands fa-youtube"></i></a>
+                <a class="instagram" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a class="linkedin" href=""><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

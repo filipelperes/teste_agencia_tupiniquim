@@ -1,0 +1,239 @@
+main {
+    overflow-x: hidden;
+}
+
+span.download-line,
+span.line {
+    background: url(../imgs/linha-reta-teste-programador.png.jpg);
+    display: inline-block;
+    width: 213px;
+    height: 17px;
+    scale: 0.6;
+}
+
+.section-about-content p>a,
+main h2,
+main h3 {
+    color: var(--main-color);
+}
+
+main p {
+    color: var(--grey);
+}
+
+.section-about-content,
+main a {
+    font-weight: 500;
+}
+
+.section-how-to h2,
+.section-about-content h3,
+.cta-content h2 {
+    font-size: 2rem;
+}
+
+.download h3,
+.slide-content h3 {
+    font-size: 1.5rem;
+}
+
+/* SECTION HEADER */
+.section-header-container {
+    padding: 5% 0 0 5%;
+    height: 670px;
+}
+
+.section-header-container span.line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.section-header-content {
+    width: min(350px, 100%);
+    line-height: 22px;
+    margin: 0 auto;
+}
+
+.section-header-content h2 {
+    font-size: 3rem;
+    line-height: 62px;
+}
+
+.section-header-content p {
+    margin: 30px 0 40px 0;
+}
+
+.section-header-content a {
+    color: var(--white);
+    background: rgb(92,106,239);
+    background: linear-gradient(45deg, rgba(92,106,239,1) 0%, rgba(38,224,250,1) 75%);
+    padding: 11px 0;
+    width: 130px;
+    align-self: flex-start;
+}
+
+.section-header-img {
+    background: url(../imgs/img-banner-teste-programador.png) no-repeat top / contain;
+}
+
+/* SECTION HOW TO */
+.section-how-to h2 {
+    padding: 5% 0;
+}
+
+.slide-content img {
+    width: 60%;
+}
+
+.slide-content h3,
+.slide-content p {
+    width: 50%;
+}
+
+/* SECTION ABOUT */
+.section-about>div:first-of-type .section-about-img {
+    background: url(../imgs/img-fundo-teste-programador.png) no-repeat left top / contain;
+    order: -1;
+}
+
+.section-about>div:first-of-type .section-about-content p:last-of-type {
+    margin-bottom: 27px;
+}
+
+.section-about>div:last-of-type .section-about-img {
+    background: url(../imgs/img-fundo-2-teste-programador.png) no-repeat right top / contain;
+}
+
+.section-about>div:last-of-type .section-about-content {
+    align-self: flex-end;
+    margin: 0 auto;
+}
+
+.section-about-content-container {
+    height: 650px;
+}
+
+.section-about-content {
+    top: 7%;
+    line-height: 23px;
+    width: min(400px, 100%);
+}
+
+.section-about-content span.line {
+    left: -10%;
+    margin: 70px 0;
+}
+
+.section-about-content h3 {
+    line-height: 42px;
+}
+
+.section-about-content a {
+    color: var(--blue);
+}
+
+.section-about-content i {
+    font-size: 0.7rem !important;
+}
+
+.section-about-content p span.line {
+    left: 34%;
+    top: -9px;
+    margin: 0;
+    scale: 0.2;
+    width: 170px;
+}
+
+/* SECTION DOWNLOAD AND CALL TO ACTION (CTA) */
+.section-download-cta {
+    margin: 7% 0;
+}
+
+.download {
+    background: url(../imgs/img-fundo-4-teste-programador.png) no-repeat left top / contain;
+    height: 700px;
+    margin-bottom: 5%;
+}
+
+.download-content {
+    width: 60%;
+    align-self: center;
+    top: 30%;
+}
+
+.download-content span.download-line {
+    left: -11%;
+    background: var(--white);
+}
+
+span.download-line>span {
+    z-index: 99;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 52px;
+    background: #e2dfff;
+}
+
+.download-content h3 {
+    margin: 55px 0;
+}
+
+.download-buttons a {
+    background: #000;
+    box-shadow: 2px 2px 15px -3px rgba(0,0,0,0.1);
+    padding: 7px 19px 7px 45px;
+    border-radius: 4px;
+}
+
+.download-buttons p {
+    font-weight: 400;
+    font-size: 0.6rem;
+}
+
+.download-buttons a,
+.download-buttons p {
+    color: var(--white);
+}
+
+.download-buttons>a i {
+    position: absolute;
+    font-size: 2rem;
+    left: 8%;
+    top: 50%;
+}
+
+.button-clay-store i {
+    transform: translateY(-47%) rotate(75deg);
+    color: #00ef75;
+}
+
+.button-play-app i {
+    transform: translateY(-47%) rotate(165deg);
+    color: var(--white);
+}
+
+.button-play-app {
+    margin-left: 23px;
+}
+
+/* CTA START */
+.cta-content {
+    width: 50%;
+}
+
+.cta-content span.line {
+    transform: translateX(-33%);
+    margin-top: 33px;
+}
+
+.cta-arrow {
+    background: url(../imgs/setas-teste-programador.png) no-repeat center;
+    width: 79px;
+    height: 99px;
+    scale: 0.7;
+    transform: translate(33px, -12%);
+}
